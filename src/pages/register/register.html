@@ -1,0 +1,45 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class=" auth-bg">
+  <!-- Login Form -->
+  <div class="login-cont">
+      <ion-item>
+          <ion-input type="text" placeholder="Your name"></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+            
+      <button  class="login-btn" ion-button color="primary"  block (click)="login()">CREATE ACCOUNT</button>
+      <ion-row class="social-row">
+        <ion-col class="fb-col">
+          <button ion-button icon-left block (click)="fbLogin()"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</button>
+        </ion-col>
+        <ion-col class="google-col">
+          <button ion-button icon-left block (click)="googleLogin()"><ion-icon name="logo-google"></ion-icon>GOOGLE</button>
+        </ion-col>
+      </ion-row>
+      <!-- Other links -->
+      <ion-grid>
+          <ion-row>
+            <ion-col>
+              <span ion-text color="white" >Forgot password?</span>
+            </ion-col>
+            <ion-col>
+              <span ion-text color="white" >
+                <span ion-text color="white" class="pull-left" (click)="signup()">Login</span>
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div> 
+   
+</ion-content>

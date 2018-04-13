@@ -1,0 +1,35 @@
+page-places,
+.places {
+  .back-button-icon-md, .back-button-icon-ios{
+    color:white;
+  }
+  .back-button-text{
+    display: none !important;
+  }
+  .div-lbl{
+    font-weight: bold;
+  }
+  ion-item {
+    position: relative;
+
+    ion-icon,
+    ion-icon:first-child {
+      height: 100%;
+      min-width: 30px;
+      font-size: 20px;
+
+      &:before {
+        width: 32px;
+      }
+    }
+
+    .item-icon-label {
+      position: absolute;
+      left: 16px;
+      bottom: 10px;
+      min-width: 30px;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}

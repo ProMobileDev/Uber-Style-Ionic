@@ -1,0 +1,95 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <button  ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Find Store</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab center bottom>
+        <button ion-fab color="vibrant" (click)="next()" mini>NEXT</button>
+  </ion-fab>
+  <!-- Show map here -->
+  <!-- <div id="{{ mapId }}" [ngStyle]="{height: mapHeight + 'px'}"></div> -->
+  <div #map id="map"></div>  
+
+  <div class="modal-bg black-transparent" [hidden]="!showModalBg"></div>
+
+   <!--Choose pickup and drop off places-->
+  <ion-list class="map-overlay list-full-border">
+    <ion-item (click)="choosePlace()">
+      <ion-icon name="search"></ion-icon>
+    </ion-item>
+    
+  </ion-list>
+
+  <!-- Booking information -->
+  <div class="booking-info">
+    <!--<button  ion-button color="primary"  class="button-circle button-next" [hidden]="showForm" (click)="toggleForm()">NEXT</button> -->
+
+    <!-- <div padding [ngClass]="{'stable-bg': !showForm, 'light': showForm}"></div> -->
+
+    <!-- <ion-grid no-padding [hidden]="showForm">
+      <ion-row class="vehicles" text-center>
+        <ion-col class="item-vehicle" *ngFor="let vehicle of vehicles; let i = index" [ngClass]="{'active': vehicle.active}"
+                 (click)="toggleVehicle(i)">
+          <i class="{{ vehicle.icon }}"></i>
+          <span>{{ vehicle.name }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>  -->
+
+    <ion-list class="booking-form stable-bg list-full-border padding-10" no-margin [hidden]="!showForm">
+      <ion-item>
+        <ion-icon name="cash" item-left></ion-icon>
+        <div (click)="choosePaymentMethod()">
+          <div>Payment</div>
+          <span class="bold">Cash</span>
+        </div>
+        <ion-icon name="md-arrow-dropright" item-right></ion-icon>
+      </ion-item>
+
+      <!--<ion-item class="button-set">
+
+        <ion-grid>
+          <ion-row>
+
+            <ion-col>
+              <button  ion-button class="active" block padding>Pick-up Now</button>
+            </ion-col>
+
+            <ion-col>
+              <button  ion-button block>Pick-up Later</button>
+            </ion-col>
+
+          </ion-row>
+        </ion-grid> 
+
+      </ion-item> 
+
+      <ion-item (click)="showNotePopup()">
+        <ion-icon name="ios-create-outline" item-left></ion-icon>
+        <span class="italic" ion-text color="dark"  [hidden]="note">Notes to driver</span>
+        <span ion-text color="dark"  [hidden]="!note">{{ note }}</span>
+      </ion-item> 
+
+      <ion-item (click)="showPromoPopup()">
+        <ion-icon name="pricetag" item-left></ion-icon>
+        <span class="italic" ion-text color="dark"  [hidden]="promo">Promo Code</span>
+        <span ion-text color="dark"  [hidden]="!promo">{{ promo }}</span>
+      </ion-item>-->
+
+      <button  ion-button color="primary"  block (click)="book()">BOOK</button>
+    </ion-list>
+
+  </div>
+
+</ion-content>

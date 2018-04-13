@@ -1,0 +1,29 @@
+page-tracking,
+.tracking {
+  .tracking-info {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    width: 100%;
+
+    .icon {
+      left: 5px;
+      margin-top: 5px;
+      width: 54px;
+      height: 54px;
+    }
+
+    .item-content {
+      position: relative;
+      padding-right: 80px;
+
+      .action-icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2em;
+      }
+    }
+  }
+}

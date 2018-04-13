@@ -1,0 +1,39 @@
+page-driver,
+.driver {
+  .driver-top {
+    height: 30%;
+    padding-top: 15%;
+
+    &>span {
+      font-size: 1.2em;
+    }
+  }
+
+  .driver-info {
+    padding-top: $driverProfilePictureSize / 2 + 20px;
+    height: 70%;
+
+    .driver-picture {
+      position: absolute;
+      top: - $driverProfilePictureSize / 2;
+      width: 100%;
+      text-align: center;
+
+      &>img {
+        width: $driverProfilePictureSize;
+        height: $driverProfilePictureSize;
+      }
+    }
+
+    .driver-plate {
+      margin-top: 40px;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 16px;
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+}

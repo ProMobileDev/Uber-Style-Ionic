@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="profile">
+  <ion-fab center bottom>
+        <button ion-fab color="vibrant" (click)="buy()" mini>BUY</button>
+  </ion-fab>
+  <div class="pic-cont">
+      <img class="profile-picture" src="assets/img/thumb/adam.jpg">
+      <!-- <p class="currency-lbl" ion-text color="dark" >AUD</p> -->
+      <p class="currency-lbl" ion-text color="dark" >{{info.components.country.short}}</p>
+      <!-- <h2 ion-text color="primary"> Alfresco Italian Restaurant</h2> -->
+      <h2 ion-text color="primary"> {{info.name}}</h2>
+      <!-- <p class="address-lbl" ion-text color="dark">137 Flockton St, Everton Park QLD 4053, Australia</p> -->
+      <p class="address-lbl" ion-text color="dark">{{info.address}}</p>
+      <!-- <p ion-text color="primary" >(07) 55389333</p> -->
+      <p ion-text color="primary" >{{info.phoneNumber}}</p>
+  </div>
+  <ion-list class="list-full-border">
+      <ion-item *ngFor="let record of records">
+        <div class="detail-cont" item-start >
+          <h5 class="bold">{{ record.time }} </h5>
+          <p class="top-lbl"> From: {{ record.from }}</p>
+          <p class="bottom-lbl">Current Balance: {{ record.to }}</p>
+        </div>
+        <ion-checkbox [(ngModel)]="status" item-right></ion-checkbox>
+      </ion-item>
+  </ion-list>  
+</ion-content>

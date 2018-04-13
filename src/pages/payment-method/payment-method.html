@@ -1,0 +1,38 @@
+<!--
+  Generated template for the PaymentMethodPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar  color="primary" >
+    <ion-title>Payment Methods</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="list-full-border" radio-group>
+    <ion-item>
+      <ion-label>
+        Cash
+        <p class="text-hint">Cash</p>
+      </ion-label>
+      <ion-radio checked="true" value="A" (click)="changeMethod('cash')"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Card
+        <p class="text-hint">Credit card XXX71</p>
+      </ion-label>
+      <ion-radio value="B" (click)="changeMethod('card')"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Paypal
+        <p class="text-hint">mypaypal@noo.com</p>
+      </ion-label>
+      <ion-radio value="B" (click)="changeMethod('card')"></ion-radio>
+    </ion-item>
+  </ion-list>
+</ion-content>

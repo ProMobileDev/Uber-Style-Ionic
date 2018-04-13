@@ -1,0 +1,21 @@
+page-finding,
+.finding {
+  .location-animation {
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    background: #009B54;
+
+    ion-icon {
+      margin-top: 100px;
+      font-size: 3em;
+    }
+  }
+
+  .list-drivers {
+    .item {
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+  }
+}

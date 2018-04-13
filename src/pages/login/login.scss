@@ -1,0 +1,52 @@
+page-login,
+.login {
+    .button{
+        font-weight: bold;
+    }
+    .fb-col{
+        padding-left: 0px;
+        .button{
+            background-color: #314D92 !important;
+        }
+    }
+    .google-col{
+        padding-right: 0px;
+        .button{
+            background-color: #E3422E !important;
+        }
+    }
+    span{
+        font-weight: bold;
+    }
+    .login-cont{
+        position: absolute;
+        width: 100%;
+        // border: 1px solid red;
+        top: 45%;
+        padding: 16px;
+        ion-input {
+            padding-left: 2px;
+        }
+        .login-btn{
+            margin-top: 13%;
+            width: 96%;
+            margin-left: 2%;
+        }
+        .social-row{
+            margin-top: 5%;
+        }
+        .grid{
+            padding: 0px;
+        }
+    }
+    .item{
+        background-color: transparent!important;
+        padding-left: 0px !important;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .item-ios.item-block .item-inner,
+    .item-md.item-block .item-inner{
+        border-bottom: 0.55px solid #000;
+    }
+}

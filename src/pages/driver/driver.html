@@ -1,0 +1,44 @@
+<!--
+  Generated template for the DriverPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title>Driver found</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="driver-top dark-bg light" text-center>
+    <span>Success! We found you a driver</span>
+  </div>
+
+  <div class="driver-info rlt" text-center>
+
+    <div class="driver-picture" padding-bottom>
+
+      <img class="circle" src="assets/img/thumb/adam.jpg" alt=""/>
+    </div>
+
+    <div no-margin>Hi, my name is</div>
+    <h3 no-margin ion-text color="primary" >{{ driver.name }}</h3>
+    <div no-margin>and I am {{ driver.distance }}KM away</div>
+
+    <ion-grid class="driver-plate">
+      <ion-row>
+        <ion-col>
+          <div class="text-hint">Plate Number</div>
+          <strong margin-top>{{ driver.plate }}</strong>
+        </ion-col>
+        <ion-col>
+          <div class="text-hint">Please pay by</div>
+          <strong>Cash</strong>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div ion-button block color="primary" (click)="track()">Next</div>
+  </div>
+</ion-content>

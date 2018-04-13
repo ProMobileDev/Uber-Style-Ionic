@@ -1,0 +1,44 @@
+<!--
+  Generated template for the PlacesPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title>Places</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="serviceInput"  (ionInput)="placeSearch($event)" [showCancelButton] ="" placeholder="Search"></ion-searchbar>
+  <ion-item-group class="list-full-border">
+    <ion-item-divider class="div-lbl" color="gray">Recent</ion-item-divider>
+    <ion-item *ngFor="let place of places" (click)="choosePlace(place)">
+      <ion-icon name="ios-pin-outline" item-left>
+      </ion-icon>
+      <span class="item-icon-label">
+        {{ place.distance }} km
+      </span>
+      <div>
+        <div class="bold">{{ place.name }}</div>
+        <span>{{ place.address }}</span>
+      </div>
+    </ion-item>
+  </ion-item-group>
+  <ion-item-group class="list-full-border">
+      <ion-item-divider class="div-lbl" color="gray">Nearby</ion-item-divider>
+      <ion-item *ngFor="let place of places" (click)="choosePlace(place)">
+        <ion-icon name="ios-pin-outline" item-left>
+        </ion-icon>
+        <span class="item-icon-label">
+          {{ place.distance }} km
+        </span>
+        <div>
+          <div class="bold">{{ place.name }}</div>
+          <span>{{ place.address }}</span>
+        </div>
+      </ion-item>
+    </ion-item-group>
+
+</ion-content>

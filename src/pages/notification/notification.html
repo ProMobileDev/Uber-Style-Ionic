@@ -1,0 +1,24 @@
+<!--
+  Generated template for the NotificationPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary" >
+    <button  ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notification</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="list-full-border">
+    <ion-item *ngFor="let noti of notifications">
+      <ion-icon name="ios-mail-outline" color="primary"  item-left></ion-icon>
+      <div [ngClass]="{'bold': !noti.read}">{{ noti.title }}</div>
+      <span>{{ noti.createdAt }}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

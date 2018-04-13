@@ -1,0 +1,64 @@
+page-profile,
+.profile {
+    .toolbar-background{
+        background-color: #000000;  
+    }
+    .back-button-icon-md, .back-button-icon-ios{
+        color:white;
+      }
+    .back-button-text{
+        display: none !important;
+    }
+    .toolbar-title{
+        color: white !important;
+    }
+    .fab[mini]{
+        margin: 8px;
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+      }
+      .fab .button-inner{
+        font-weight: bold !important;
+      }
+    .pic-cont{
+        text-align: center;
+        padding-top: 16px;
+        .profile-picture{
+            border-radius: 50%;
+        }
+        p,h2{
+            margin: 0px;
+        }
+        .currency-lbl{
+            margin-top: 1.5rem;
+        }
+        .address-lbl{
+            font-size: 1.2rem;
+        }
+    }
+    .list-ios > .item-block:first-child,
+    .list-md > .item-block:first-child {
+        border-top: 0.55px solid #c8c7cc !important;
+    }  
+    .list-full-border{
+        margin-top: 1.0rem;
+        .detail-cont{
+            h5{
+                margin-top: 1.2rem;
+                font-size: 1.6rem;
+                font-weight: bold
+            }
+            .top-lbl{
+                margin-top: 1.5rem;
+            }
+            .bottom-lbl{
+                margin-top: 0px;
+                margin-bottom: 2.8rem;
+            }
+        }
+    }
+    
+        
+    
+}
